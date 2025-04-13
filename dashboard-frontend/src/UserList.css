@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styling */
+.header-user {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.head-user {
+  background-color: #2e7d32;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  height: 3vh;
+  padding: 2%;
+  border-radius: 10px;
+}
+/* Search Bar Styling */
+.search-bar-user {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #388e3c;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #1b5e20;
+}
+
+/* Grid Styling */
+.grid-user {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Card Styling */
+.card-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.card-name {
+  display: flex;
+  flex-direction: row;
+  width: 13%;
+}
+
+.name-title {
+  font-size: 20px;
+  width: 200px;
+  /*background-color: #2e7d32;*/
+}
+
+.name-detail {
+  font-size: 20px;
+}
+
+.card-user:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+.card-image-user {
+  width: 50px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+}
+
+.nxt-btn {
+  width: 10%;
+  height: 50px;
+  /* margin: 20px; */
+  display: block;
+  margin: 20px auto;
+  background-color: #388e3c;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.nxt-btn:hover {
+  background-color: #2e7d32;
+}
+
+/* Card Details Styling */
+.card-user div {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-user div:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* No Results Styling */
+.grid-user p {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  width: 100%;
+}

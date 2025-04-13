@@ -1,0 +1,785 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
+  min-height: 100vh;
+  background: url("./Green Floral Background Flyer.png") no-repeat center
+    center/cover;
+}
+
+/* User Profile */
+.user-profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.user-profile p {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 10px;
+  color: #333;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+
+.user-profile img:hover {
+  transform: scale(1.1);
+}
+
+/* GIS Section */
+.gis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gis:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gis input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.3s ease;
+}
+
+.gis input:focus {
+  border-color: #41b06e;
+  outline: none;
+}
+
+.gis button {
+  background-color: #41b06e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.gis button:hover {
+  background-color: #41a06e;
+  transform: scale(1.05);
+}
+
+.gis-data {
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+
+.gis-details {
+  background-color: #fcfcfc;
+  padding: 20px 40px;
+  border-radius: 15px;
+  width: 55%;
+  /* margin-right: 100px; */
+}
+
+.gis-details h3 {
+  font-size: 24px;
+}
+
+.gis-details p {
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+/* Dashboard Grid */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, auto);
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.f-card,
+.t-card,
+.o-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(221, 221, 221, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.f-card:hover,
+.t-card:hover,
+.o-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* First Row Divs (Smaller Height) */
+.div1,
+.div2,
+.div3,
+.div4 {
+  height: 200px; /* Adjusted height for first row divs */
+  padding: 15px; /* Reduced padding */
+}
+
+/* Image Sizing and Centering */
+.f-card img {
+  max-width: 80%; /* Adjusted image size */
+  height: auto;
+  margin: 10px 0; /* Reduced margin */
+  transition: transform 0.3s ease;
+}
+
+.f-card img:hover {
+  transform: scale(1.1);
+}
+
+.f-card p {
+  margin-bottom: 10px;
+}
+
+/* Soil Type Card */
+.soil-type img {
+  max-width: 45%; /* Adjusted image size */
+  height: auto;
+}
+
+/* PH Scale Card */
+.ph-scale img {
+  max-width: 70%; /* Adjusted image size */
+  height: auto;
+}
+
+/* Moisture Card */
+.moisture img {
+  max-width: 20%; /* Adjusted image size */
+  height: auto;
+}
+
+/* Temperature Card */
+.temperature img {
+  max-width: 28%; /* Adjusted image size */
+  height: auto;
+}
+
+/* NPK Chart Card */
+.npk-chart {
+  grid-column: 1 / span 2;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 300px; /* Fixed height for NPK chart */
+}
+
+.npk-chart label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.npk-details {
+  display: flex;
+}
+
+.npk-item {
+  background-color: #e2e2e2;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+/* Details Card */
+.div6 {
+  grid-column: 3 / span 2;
+  justify-content: flex-start;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.div6 h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.div6 p {
+  margin: 10px 30px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Vegetation Container */
+.vegitation-container {
+  grid-column: 1 / span 4; /* Occupies entire row */
+  height: 300px; /* Matches NPK chart height */
+  background-image: url("/vegitation-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For positioning the inner div */
+}
+
+/* Glassmorphism Text Container */
+.vegitation-text {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Limit maximum width */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vegitation-text h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.vegitation-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Fertilizer Prediction Card */
+.fertilizer-prediction {
+  grid-column: 1 / span 2; /* Spans 2 columns */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.fertilizer-prediction h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.fertilizer-prediction p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.fertilizer-prediction button {
+  background-color: #41b06e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fertilizer-prediction button:hover {
+  background-color: #41a06e;
+  transform: scale(1.05);
+}
+
+/* Fertilizer Details Card */
+.fertilizer-details {
+  grid-column: 3 / span 2; /* Spans 2 columns */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.fertilizer-details h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.fertilizer-details p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Disease Prediction Card */
+.disease-prediction {
+  grid-column: 1 / span 2; /* Spans 2 columns */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.disease-prediction h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Insect Classification Card */
+.insect-classification {
+  grid-column: 3 / span 2; /* Spans 2 columns */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.insect-classification h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.upload-label {
+  background-color: #41b06e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #41a06e;
+  transform: scale(1.05);
+}
+
+/* Predict Button */
+.predict-button {
+  background-color: #41b06e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.predict-button:hover {
+  background-color: #41a06e;
+  transform: scale(1.05);
+}
+
+/* Continue button */
+
+.continue-button {
+  background-color: #41b06e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.continue-button:hover {
+  background-color: #41a06e;
+  transform: scale(1.05);
+}
+
+/* Result Area */
+.result-area {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.result-area h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.result-area p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Div 12 and Div 13 */
+.div12,
+.div13 {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.div12 {
+  grid-column: 1 / span 2; /* Spans 2 columns */
+}
+
+.div13 {
+  grid-column: 3 / span 2; /* Spans 2 columns */
+}
+
+.div12 h3,
+.div13 h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.div12 p,
+.div13 p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.prediction-container {
+  grid-column: 1 / span 4; /* Occupies entire row */
+  height: 150px; /* Matches NPK chart height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.weather-prediction,
+.weather-suggestion {
+  max-height: 45%;
+  min-height: 50%;
+  min-width: 25%;
+  border-radius: 15px;
+  border: 1px solid rgb(247, 247, 247);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+  font-size: 16px;
+  text-align: center;
+  padding: 30px 10px 10px 10px;
+  line-height: 23px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+
+.prediction-container input {
+  width: 15%;
+  height: 25%;
+  font-size: 18px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.prediction-container h3 {
+  letter-spacing: 2px;
+}
+
+.prediction-container button {
+  height: 30%;
+  width: 10%;
+  background-color: #41b06e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prediction-container button:hover {
+  background-color: #41a06e;
+  transform: scale(1.05);
+}
+
+.generate-report {
+  grid-column: 1 / span 4;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.generate-report button {
+  height: 30%;
+  /* width: 10%; */
+  background-color: #41b06e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.generate-report button:hover {
+  background-color: #41a06e;
+  transform: scale(1.05);
+}
+
+.generate-report select {
+  height: 30%;
+  width: 10%;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.footer {
+  background-color: #41b06e;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer p {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.progress {
+  height: 10px;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .npk-chart,
+  .div6,
+  .vegitation-container {
+    grid-column: 1 / span 2; /* Adjust for tablet view */
+  }
+
+  .vegitation-container {
+    height: 250px; /* Adjusted height for tablet */
+  }
+
+  .vegitation-text {
+    width: 90%; /* Increase width for smaller screens */
+    padding: 15px;
+  }
+
+  .vegitation-text h3 {
+    font-size: 20px;
+  }
+
+  .vegitation-text p {
+    font-size: 14px;
+  }
+
+  .fertilizer-prediction,
+  .fertilizer-details {
+    grid-column: 1 / span 2; /* Adjust for tablet view */
+  }
+
+  .disease-prediction,
+  .insect-classification {
+    grid-column: 1 / span 2; /* Adjust for tablet view */
+  }
+
+  .div12,
+  .div13 {
+    grid-column: 1 / span 4; /* Stack vertically on tablets */
+    margin-bottom: 20px; /* Add spacing between stacked divs */
+  }
+
+  .div12 h3,
+  .div13 h3 {
+    font-size: 18px; /* Smaller heading for tablets */
+  }
+
+  .div12 p,
+  .div13 p {
+    font-size: 14px; /* Smaller text for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .gis {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gis input {
+    width: 100%;
+  }
+
+  .gis button {
+    width: 100%;
+  }
+
+  .npk-chart,
+  .div6,
+  .vegitation-container {
+    grid-column: 1 / span 1; /* Adjust for mobile view */
+  }
+
+  .vegitation-container {
+    height: 200px; /* Adjusted height for mobile */
+  }
+
+  .vegitation-text {
+    width: 95%; /* Increase width for mobile */
+    padding: 10px;
+  }
+
+  .vegitation-text h3 {
+    font-size: 18px;
+  }
+
+  .vegitation-text p {
+    font-size: 12px;
+  }
+
+  .fertilizer-prediction,
+  .fertilizer-details {
+    grid-column: 1 / span 1; /* Adjust for mobile view */
+  }
+
+  .disease-prediction,
+  .insect-classification {
+    grid-column: 1 / span 1; /* Adjust for mobile view */
+  }
+
+  .div12,
+  .div13 {
+    padding: 15px; /* Reduce padding for mobile */
+    grid-column: 1 / span 1;
+  }
+
+  .div12 h3,
+  .div13 h3 {
+    font-size: 16px; /* Smaller heading for mobile */
+  }
+
+  .div12 p,
+  .div13 p {
+    font-size: 14px; /* Smaller text for mobile */
+  }
+}

@@ -1,0 +1,152 @@
+/* General Styles */
+.about-container-456 {
+  font-family: "Arial", sans-serif;
+  background: url("./Green Floral Background Flyer.png") no-repeat center center/cover;
+  color: #1b3a2f;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.intro-image-456{
+  width: 30px;
+  height: 50px;
+}
+/* Header Section */
+.about-header-456 {
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.about-title-456 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c6e49;
+}
+
+.about-subtitle-456 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #4a7c59;
+}
+
+/* Introduction Section */
+.about-intro-456 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.intro-text-456 {
+  flex: 1;
+  text-align: left;
+}
+
+.intro-text-456 h2 {
+  font-size: 32px;
+  color: #2c6e49;
+}
+
+.intro-text-456 p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #1b3a2f;
+}
+
+.intro-image-456 img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* Expertise Section */
+.expertise-section-456 {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.expertise-title-456 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c6e49;
+}
+
+.expertise-cards-456 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.expertise-card-456 {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 100, 50, 0.3);
+}
+
+.expertise-icon-456 {
+  font-size: 40px;
+  color: #4a7c59;
+  margin-bottom: 10px;
+}
+
+/* CTA Section */
+.cta-section-456 {
+  text-align: center;
+  margin: 50px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.cta-section-456 h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c6e49;
+}
+
+.cta-section-456 p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #1b3a2f;
+}
+
+.cta-button-456 {
+  background: #2c6e49;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button-456:hover {
+  background: #1b3a2f;
+}
+
+/* Footer */
+.about-footer-456 {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  border-radius: 10px;
+}

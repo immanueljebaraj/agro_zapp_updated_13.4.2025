@@ -1,0 +1,132 @@
+
+/* 🌿 General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef7ee;
+}
+
+.app-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 🌿 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c8e6c9;
+}
+
+/* 🌿 Main Container */
+.main-container-items {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* 🌿 Search Bar */
+.search-bar-container {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  border: 2px solid #388e3c;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 🌿 Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+.card-stock {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-stock:hover {
+  transform: scale(1.05);
+}
+
+/* Image inside Card */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card Footer */
+.card-footer {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d32f2f;
+  background-color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-container-items {
+      padding: 0 10px;
+  }
+
+  .grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+

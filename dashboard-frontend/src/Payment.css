@@ -1,0 +1,182 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url('./Green Floral Background Flyer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* App Container */
+.app-container-pay {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255,0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Checkout Section */
+.check-pay {
+    padding: 20px;
+}
+
+.check-pay > div:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Search Bar */
+.search-bar-user {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+/* Grid Layout for Products */
+.grid-pay {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Product Card */
+.card-pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.card-pay-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-image-pay {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.card-name-pay {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    flex: 1;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.card-pay div {
+    font-size: 14px;
+    color: #666;
+    flex: 2;
+    margin-left: 15px;
+}
+
+.price{
+    text-align: right;
+}
+
+/* .card-pay div:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #050505;
+    text-align: left;
+    flex: 1;
+} */
+
+/* No Products Found Message */
+.grid-pay p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    width: 100%;
+}
+
+/* Total Amount Section */
+.button-div-pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #007bff;
+}
+
+.total-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: right;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total-amount span {
+    color: #007bff;
+    margin-left: 10px;
+}
+
+/* Next Button */
+.buttons-pay {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+}
+
+.buttons-pay:hover {
+    background-color: #0056b3;
+}
+
+.button-div-inter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}

@@ -1,0 +1,122 @@
+.contact-container {
+  max-width: 900px;
+  margin: 100px auto;
+  background: white;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e5339;
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact-container button {
+  width: 100%;
+  background-color: #3e7c47;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #346a3a;
+}
+
+.contact-container p {
+  margin: 4px 0;
+}
+.contact-title {
+  margin-top: -70px;
+}
+
+.cc1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.form-control {
+  width: 200%; /* Full width of the container */
+  max-width: 1000px; /* Optional: max width */
+  height: 50px; /* Increase height */
+  padding: 12px 14px; /* Padding inside input */
+  font-size: 16px; /* Text size */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.navbar-123 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: rgba(34, 97, 50, 0.8);
+}
+
+.navbar-logo-123 {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon-123 {
+  margin-right: 8px;
+}
+
+.nav-links-123 {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-item-123 {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  padding: 20px;
+}
+
+.nav-item-123:hover {
+  color: #c8f3b0;
+}
+
+.btn-primary-123 {
+  background: #4caf50;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn-primary-123:hover {
+  background: #3c8b41;
+}
